@@ -95,6 +95,7 @@ button {
   border: none;
   box-shadow: var(--shadow);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 button:hover,
 button:focus .servbut:hover {
@@ -151,6 +152,7 @@ button:focus .servbut:hover {
 .nav-item {
   display: block;
   margin-right: 50px;
+  
 }
 
 .nav-item:nth-last-child(1) {
@@ -167,6 +169,7 @@ button:focus .servbut:hover {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-current {
@@ -176,6 +179,7 @@ button:focus .servbut:hover {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+ 
 }
 
 .link-current::after {
@@ -208,6 +212,7 @@ button:focus .servbut:hover {
 
 .contact-nav-item:hover svg {
   fill: var(--accent-color);
+  
 }
 
 .contact-nav-item:nth-child(1) {
@@ -216,11 +221,13 @@ button:focus .servbut:hover {
 
 .contact-nav-icon {
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-nav-list .link {
   display: flex;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -343,12 +350,14 @@ h3 {
   display: flex;
 }
 
-.we-do-item {
+
+
+.we-do-item-list {
   position: relative;
   margin-right: 30px;
 }
 
-.we-do-item:nth-last-child(1) {
+.we-do-item-list-last {
   margin-right: 0;
 }
 
@@ -434,6 +443,7 @@ h3 {
   height: 44px;
   border-radius: 50%;
   fill: var(--iconcolor);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon:hover,
@@ -471,6 +481,7 @@ h3 {
   border: 1px solid var(--iconcolor);
   border-radius: 4px;
   fill: var(--iconcolor);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -526,6 +537,7 @@ address {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-contact {
@@ -564,6 +576,7 @@ address {
   fill: var(--white-color);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-icon:hover,
@@ -577,22 +590,28 @@ address {
 
 .backdrop {
   position: fixed;
+  opacity: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color:  rgba(0, 0, 0, 0.692);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  
+  
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
   visibility: hidden;
+
 }
 
 .modal {
@@ -604,8 +623,8 @@ address {
   min-width: 528px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-transition: transform 250ms cubic-bezier(0.1, 0, 0.2, 3), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.1, 0, 0.2, 3);
 }
  
 .close-btn {
@@ -727,9 +746,9 @@ transition: transform 250ms cubic-bezier(0.1, 0, 0.2, 3), visibility 250ms cubic
   left: 712px;
   top: 174px;
   padding: 6px 22px;
-
   background: #f5f4fa;
   border-radius: 4px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portofolio:hover,
